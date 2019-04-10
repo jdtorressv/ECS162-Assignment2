@@ -1,4 +1,6 @@
 
+
+
 body {
     min-height: 100vh;  /* needed to make sure body fills up window */
 }
@@ -7,5 +9,53 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex:  0 1 auto;
 }
 
+h2, h3 {
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+}
+h3 {
+  font-family: montserrat, sans-serif; font-weight: 200; font-style: italic;
+}
+
+div#TopStuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex:  0 1 auto;
+}
+
+#Nav {
+  Helvetica: font-family: helvetica; font-size: normal;
+}
+#Bruce {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex:  0 1 auto;
+}
+
+#CorridorHeadings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex:  0 1 auto;
+}
+
+
+footer {
+
+}
+
+section? nav?

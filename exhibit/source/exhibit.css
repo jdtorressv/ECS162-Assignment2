@@ -1,40 +1,38 @@
-
-
-
 body {
     min-height: 100vh;  /* needed to make sure body fills up window */
 }
-
 header {
 }
-
 main {
+  font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex:  0 1 auto;
 }
-
+h1 {
+  color: rgb(90, 30, 140); 
+}
 h2, h3 {
   color: rgb(255, 255, 255);
 }
-
 h2 {
   font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
 }
 h3 {
   font-family: montserrat, sans-serif; font-weight: 200; font-style: italic;
 }
-
-div#TopStuff {
+hr {
+  width: 80%;
+}
+#TopStuff {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex:  0 1 auto;
 }
-
 #Nav {
   Helvetica: font-family: helvetica; font-size: normal;
 }
@@ -45,17 +43,27 @@ div#TopStuff {
   align-items: center;
   flex:  0 1 auto;
 }
-
 #CorridorHeadings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex:  0 1 auto;
 }
-
+h4, span {
+  color: rgb(201, 82, 61);
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+}
+#MainText {
+  width: 80%;
+}
+#Extended {
+  font-weight: 500;
+}
+#Guest {
+  font-weight: 200;
+}
 
 footer {
 
 }
-
-section? nav?

@@ -132,15 +132,31 @@ hr {
   flex:  0 1 auto;
   padding-right: 16%;
 }
-footer {
-  color: rgb(201, 82, 61);
-  font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  flex: 0 1 auto;
-  padding-left: 10%;
-  padding-right: 36%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+@media(min-width: 480px) { /*Tablet*/
+  footer {
+    color: rgb(201, 82, 61);
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    padding-left: 10%;
+    padding-right: 36%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+@media(min-width: 780px) { /*Standard Web*/
+  footer {
+    color: rgb(201, 82, 61);
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    padding-left: 10%;
+    padding-right: 36%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 }

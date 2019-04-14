@@ -13,7 +13,7 @@ main {
 }
 h1 {
   color: rgb(90, 30, 140);
-  font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
+  font-family: montserrat, sans-serif; font-weight: 200; font-style: normal; font-size: 1.6vw;
 }
 h2, h3 {
   color: rgb(255, 255, 255);
@@ -66,7 +66,7 @@ hr {
   padding-left: 10%;
 }
 #Nav {
-  Helvetica: font-family: helvetica; font-size: normal;
+  Helvetica: font-family: helvetica; font-size: normal; font-size: 1.5vw;
 }
 #Bruce {
   display: flex;
@@ -76,10 +76,10 @@ hr {
   flex:  0 1 auto;
 }
 #Nauman {
-  font-size: 350%;
+  font-size: 5vw;
 }
 #Blue {
-  font-size: 220%;
+  font-size: 3.2vw;
 }
 #CorridorHeadings {
   display: flex;
@@ -112,12 +112,36 @@ hr {
   font-weight: 200;
   width: 60%
 }
-#ReadMore {
+#ReadMore.LessContent {
+  display: flex;
   font-weight: 200;
   text-decoration: underline;
 }
-#HiddenInfo {
+#ReadMore.MoreContent {
   display: none;
+  font-weight: 200;
+  text-decoration: underline;
+}
+#ReadLess.LessContent {
+  display:none;
+  font-weight: 200;
+  text-decoration: underline;
+}
+#ReadLess.MoreContent {
+  display: flex;
+  font-weight: 200;
+  text-decoration: underline;
+}
+#HiddenInfo.LessContent {
+  display: none;
+  flex-direction: row;
+  /*justify-content: space-around;*/
+  align-items: center;
+  flex:  0 1 auto;
+  padding-bottom: 5%;
+}
+#HiddenInfo.MoreContent {
+  display: flex;
   flex-direction: row;
   /*justify-content: space-around;*/
   align-items: center;
@@ -132,7 +156,7 @@ hr {
   flex:  0 1 auto;
   padding-right: 16%;
 }
-@media(min-width: 480px) { /*Tablet*/
+@media screen and (min-width: 480px) { /*************Tablet*************/
   footer {
     color: rgb(201, 82, 61);
     font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
@@ -146,14 +170,62 @@ hr {
     padding-bottom: 2%;
   }
 }
-@media(min-width: 780px) { /*Standard Web*/
-  footer {
+@media screen and (min-width: 780px) { /************Standard Web***********/
+  #ReadMore.LessContent {
+    display: flex;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #ReadMore.MoreContent {
+    display: none;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #ReadLess.LessContent {
+    display:none;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #ReadLess.MoreContent {
+    display: flex;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #HiddenInfo.LessContent {
+    display: none;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex:  0 1 auto;
+    padding-bottom: 5%;
+  }
+  #HiddenInfo.MoreContent {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex:  0 1 auto;
+    padding-bottom: 5%;
+  }
+  #Footer.LessContent {
     color: rgb(201, 82, 61);
     font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
     display: none;
     flex-direction: row;
     justify-content: space-between;
-    flex: 0 1 auto;
+    flex-shrink: 0;
+    padding-left: 10%;
+    padding-right: 36%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  #Footer.MoreContent {
+    color: rgb(201, 82, 61);
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
     padding-left: 10%;
     padding-right: 36%;
     padding-top: 2%;

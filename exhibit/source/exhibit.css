@@ -35,39 +35,13 @@ span {
 hr {
   width: 160%;
 }
-#Installation {
-  height: 25%;
-  width: 25%;
-  padding-left: 10%;
-}
-#Sketch {
-  height: 30%;
-  width: 30%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-right: 16%;
-  padding-left: 3%;
-}
 #InGreen {
   height: 22%;
   width: 22%;
   padding-left: 10%;
   padding-right: 4%;
 }
-#TopStuff {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex:  0 1 auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right: 15%;
-  padding-left: 10%;
-}
-#Nav {
-  Helvetica: font-family: helvetica; font-size: normal; font-size: 1.5vw;
-}
+
 #Bruce {
   display: flex;
   flex-direction: row;
@@ -75,24 +49,12 @@ hr {
   align-items: center;
   flex:  0 1 auto;
 }
-#Nauman {
-  font-size: 5vw;
-}
-#Blue {
-  font-size: 3.2vw;
-}
 #CorridorHeadings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex:  0 1 auto;
   padding-left: 13%;
-}
-#hFirstMainAndPic {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex: 0 1 auto;
 }
 #vFirstMain {
   display: flex;
@@ -103,14 +65,6 @@ hr {
   padding-bottom: 4%;
   padding-right: 4%;
   padding-left: 10%;
-
-}
-#Extended, #Manetti, #Hours {
-  font-weight: 500;
-}
-#Guest {
-  font-weight: 200;
-  width: 60%
 }
 #ReadMore.LessContent {
   display: flex;
@@ -157,6 +111,94 @@ hr {
   padding-right: 16%;
 }
 @media screen and (min-width: 480px) { /*************Tablet*************/
+  #Installation {
+    height: 25%;
+    width: 25%;
+    padding-left: 0%;
+  }
+  #Nav {
+    Helvetica: font-family: helvetica; font-size: normal; font-size: 2.8vw;
+  }
+  #Nauman {
+    font-size: 6vw;
+  }
+  #Blue {
+    font-size: 3.8vw;
+  }
+  #TopStuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex:  0 1 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 15%;
+    padding-left: 6%;
+  }
+  #hFirstMainAndPic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 1 auto;
+  }
+  #Sketch {
+    float: right;
+    height: 30%;
+    width: 30%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 11%;
+    padding-left: 3%;
+  }
+  #Manetti, #Hours {
+    font-weight: 500;
+  }
+  #Extended {
+    font-weight: 500;
+    font-size: 1.9vh;
+  }
+  #Guest {
+    font-weight: 200;
+    width: 60%;
+    font-size: 2.1vh;
+  }
+  #ReadMore.LessContent {
+    display: flex;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #ReadMore.MoreContent {
+    display: none;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #ReadLess.LessContent {
+    display:none;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #ReadLess.MoreContent {
+    display: flex;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  #HiddenInfo.LessContent {
+    display: none;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex:  0 1 auto;
+    padding-bottom: 5%;
+  }
+  #HiddenInfo.MoreContent {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex:  0 1 auto;
+    padding-bottom: 5%;
+  }
   footer {
     color: rgb(201, 82, 61);
     font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
@@ -171,6 +213,57 @@ hr {
   }
 }
 @media screen and (min-width: 780px) { /************Standard Web***********/
+  #Installation {
+    height: 25%;
+    width: 25%;
+    padding-left: 10%;
+  }
+  #Nav {
+    Helvetica: font-family: helvetica; font-size: normal; font-size: 1.5vw;
+  }
+  #Nauman {
+    font-size: 5vw;
+  }
+  #Blue {
+    font-size: 3.2vw;
+  }
+  #TopStuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex:  0 1 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 15%;
+    padding-left: 10%;
+  }
+  #hFirstMainAndPic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 1 auto;
+  }
+  #Sketch {
+    height: 30%;
+    width: 30%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 16%;
+    padding-left: 3%;
+  }
+  #Manetti, #Hours {
+    font-weight: 500;
+  }
+  #Extended {
+    font-weight: 500;
+    font-size: 1.7vw;
+  }
+  #Guest {
+    font-weight: 200;
+    width: 60%;
+    font-size: 1.7vw;
+  }
   #ReadMore.LessContent {
     display: flex;
     font-weight: 200;

@@ -27,8 +27,10 @@
     <main>
       <div id="hFirstMainAndPic">
         <div id="vFirstMain">
+          <img id="SketchTab" src="../assets/bruceSketch.jpg" alt="The Bruce sketch!"/>
           <h4 id="Extended"> Extended through April 14th</h4>
-          <h4 id="Guest">Guest Curator: Ted Mann <hr></h4>
+          <h4 id="Guest">Guest Curator: Ted Mann <hr id="underline"></h4>
+          <br>
           <p>
     	Coinciding with the opening of Bruce Nauman’s (MFA ’66, UC
     	Davis) retrospective at The Museum of Modern Art, New York,
@@ -40,15 +42,15 @@
     	gallery includes artworks that situate the corridor within the
     	artist’s career.
           </p>
-          <br>
-          <h4 class="LessContent" id="ReadMore" onclick="more('ReadMore','ReadLess','HiddenInfo','Footer')">
+          <br class="LessContent" id="SpaceAfterReadMore">
+          <h4 class="LessContent" id="ReadMore" onclick="more('ReadMore','ReadLess','HiddenInfo','Footer','SpaceAfterReadMore')">
             Read more ->
           </h4>
         </div>
-        <img id="Sketch" src="../assets/bruceSketch.jpg" alt="The Bruce sketch!"/>
+        <img id="SketchWeb" src="../assets/bruceSketch.jpg" alt="The Bruce sketch!"/>
       </div>
       <div class="LessContent" id="HiddenInfo">
-        <img id="InGreen" src="../assets/bruceInGreenCorridor.jpg" alt="Bruce in the geen corridor!"/>
+        <img id="InGreenWeb" src="../assets/bruceInGreenCorridor.jpg" alt="Bruce in the geen corridor!"/>
         <div id="vSecondMain">
           <p>
   	Few living artists have done as much to expand the boundaries
@@ -62,6 +64,8 @@
   	between sculpture, performance, film, video, photography,
   	drawing, printmaking, and large-scale installation.
           </p>
+          <br>
+          <img id="InGreenTab" src="../assets/bruceInGreenCorridor.jpg" alt="Bruce in the geen corridor!"/>
           <p>
   	This exhibition coincides with a major Nauman retrospective,
   	co-organized by The Museum of Modern Art (MoMA) and the
@@ -81,20 +85,20 @@
   	time that the installation has actually been realized.
           </p>
           <br>
-          <h4 class="LessContent" id="ReadLess" onclick="less('ReadMore','ReadLess','HiddenInfo','Footer')">
+          <h4 class="LessContent" id="ReadLess" onclick="less('ReadMore','ReadLess','HiddenInfo','Footer','SpaceAfterReadMore')">
             Read less ->
           </h4>
         </div>
       </div>
     </main>
     <footer class="LessContent" id="Footer" style="background-color: rgb(249, 172, 120);">
-      <div>
+      <div id="ManSide">
         <h4 id="Manetti">Manetti Shrem Museum</h4>
         <br>
         <p>254 Old Davis Rd.</p>
         <p>Davis, CA 95616</p>
       </div>
-      <div>
+      <div id="HourSide">
         <h4 id="Hours">Hours</h4>
         <br>
         <p>Tuesday, Wednesday and Friday: Noon-6pm</p>

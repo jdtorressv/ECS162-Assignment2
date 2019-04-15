@@ -35,13 +35,6 @@ span {
 hr {
   width: 160%;
 }
-#InGreen {
-  height: 22%;
-  width: 22%;
-  padding-left: 10%;
-  padding-right: 4%;
-}
-
 #Bruce {
   display: flex;
   flex-direction: row;
@@ -55,16 +48,6 @@ hr {
   justify-content: center;
   flex:  0 1 auto;
   padding-left: 13%;
-}
-#vFirstMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 0 1 auto;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-right: 4%;
-  padding-left: 10%;
 }
 #ReadMore.LessContent {
   display: flex;
@@ -102,15 +85,10 @@ hr {
   flex:  0 1 auto;
   padding-bottom: 5%;
 }
-#vSecondMain {
-  display: flex;
-  flex-direction: column;
-  /*justify-content: space-around;
-  align-items: center;*/
-  flex:  0 1 auto;
-  padding-right: 16%;
-}
 @media screen and (min-width: 480px) { /*************Tablet*************/
+  hr {
+    display: none;
+  }
   #Installation {
     height: 25%;
     width: 25%;
@@ -120,10 +98,10 @@ hr {
     Helvetica: font-family: helvetica; font-size: normal; font-size: 2.8vw;
   }
   #Nauman {
-    font-size: 6vw;
+    font-size: 6.1vw;
   }
   #Blue {
-    font-size: 3.8vw;
+    font-size: 3.9vw;
   }
   #TopStuff {
     display: flex;
@@ -137,19 +115,68 @@ hr {
     padding-left: 6%;
   }
   #hFirstMainAndPic {
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
     flex: 0 1 auto;
   }
-  #Sketch {
-    float: right;
+  #vFirstMain {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 4%;
+    padding-left: 10%;
+  }
+  #SketchWeb {
+    display: None;
     height: 30%;
     width: 30%;
     padding-top: 4%;
     padding-bottom: 4%;
     padding-right: 11%;
     padding-left: 3%;
+  }
+  #SketchTab {
+    float: right;
+    height: 32%;
+    width: 32%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 11%;
+    padding-left: 3%;
+  }
+  #vSecondMain {
+    display: block;
+    flex-direction: column;
+    /*justify-content: space-around;
+    align-items: center;*/
+    flex:  0 1 auto;
+    padding-right: 16%;
+    padding-left: 10%;
+  }
+  #InGreenWeb {
+    display: none;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
+    padding-right: 0%;
+  }
+  #InGreenTab {
+    display: block;
+    float: left;
+    height: 32%;
+    width: 32%;
+    padding-left: 0%;
+    padding-right: 4%;
+  }
+  #ManSide {
+    padding-right: 10%;
+  }
+  #HourSide {
+    padding-left: 10%;
   }
   #Manetti, #Hours {
     font-weight: 500;
@@ -162,6 +189,7 @@ hr {
     font-weight: 200;
     width: 60%;
     font-size: 2.1vh;
+    text-decoration: underline;
   }
   #ReadMore.LessContent {
     display: flex;
@@ -199,6 +227,12 @@ hr {
     flex:  0 1 auto;
     padding-bottom: 5%;
   }
+  #SpaceAfterReadMore.LessContent {
+    display: inline;
+  }
+  #SpaceAfterReadMore.MoreContent {
+    display: none;
+  }
   footer {
     color: rgb(201, 82, 61);
     font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
@@ -207,12 +241,15 @@ hr {
     justify-content: space-between;
     flex: 0 1 auto;
     padding-left: 10%;
-    padding-right: 36%;
+    padding-right: 25%;
     padding-top: 2%;
     padding-bottom: 2%;
   }
 }
 @media screen and (min-width: 780px) { /************Standard Web***********/
+  hr {
+    display: block;
+  }
   #Installation {
     height: 25%;
     width: 25%;
@@ -244,13 +281,57 @@ hr {
     justify-content: center;
     flex: 0 1 auto;
   }
-  #Sketch {
+  #vFirstMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 4%;
+    padding-left: 10%;
+  }
+  #SketchWeb {
+    display: block;
     height: 30%;
     width: 30%;
     padding-top: 4%;
     padding-bottom: 4%;
-    padding-right: 16%;
+    padding-right: 11%;
     padding-left: 3%;
+  }
+  #SketchTab {
+    display: none;
+    float: right;
+    height: 30%;
+    width: 30%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 11%;
+    padding-left: 3%;
+  }
+  #vSecondMain {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    flex:  0 1 auto;
+    padding-right: 12%;
+  }
+  #InGreenWeb {
+    display: block;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
+    padding-right: 0%;
+  }
+  #InGreenTab {
+    display: none;
+    float: left;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
+    padding-right: 4%;
   }
   #Manetti, #Hours {
     font-weight: 500;
@@ -259,10 +340,17 @@ hr {
     font-weight: 500;
     font-size: 1.7vw;
   }
+  #ManSide {
+    padding-right: 5%;
+  }
+  #HourSide {
+    padding-left: 5%;
+  }
   #Guest {
     font-weight: 200;
     width: 60%;
     font-size: 1.7vw;
+    text-decoration: none;
   }
   #ReadMore.LessContent {
     display: flex;
@@ -295,10 +383,16 @@ hr {
   #HiddenInfo.MoreContent {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
     align-items: center;
     flex:  0 1 auto;
     padding-bottom: 5%;
+  }
+  #SpaceAfterReadMore.LessContent {
+    display: inline;
+  }
+  #SpaceAfterReadMore.MoreContent {
+    display: none;
   }
   #Footer.LessContent {
     color: rgb(201, 82, 61);
@@ -308,7 +402,7 @@ hr {
     justify-content: space-between;
     flex-shrink: 0;
     padding-left: 10%;
-    padding-right: 36%;
+    padding-right: 30%;
     padding-top: 2%;
     padding-bottom: 2%;
   }
@@ -320,7 +414,7 @@ hr {
     justify-content: space-between;
     flex-shrink: 0;
     padding-left: 10%;
-    padding-right: 36%;
+    padding-right: 30%;
     padding-top: 2%;
     padding-bottom: 2%;
   }

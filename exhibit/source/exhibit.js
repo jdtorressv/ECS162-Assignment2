@@ -1,4 +1,4 @@
-function more(ReadMore, ReadLess, HiddenInfo, Footer) {
+function more(ReadMore, ReadLess, HiddenInfo, Footer, Space) {
   let moreR = document.getElementById(ReadMore);
   moreR.classList.remove("LessContent");
   moreR.classList.add("MoreContent");
@@ -11,9 +11,12 @@ function more(ReadMore, ReadLess, HiddenInfo, Footer) {
   let footer = document.getElementById(Footer);
   footer.classList.remove("LessContent");
   footer.classList.add("MoreContent");
+  let space = document.getElementById(Space);
+  space.classList.remove("LessContent");
+  space.classList.add("MoreContent");
 }
 
-function less(ReadMore, ReadLess, HiddenInfo, Footer) {
+function less(ReadMore, ReadLess, HiddenInfo, Footer, Space) {
   let moreR = document.getElementById(ReadMore);
   moreR.classList.remove("MoreContent");
   moreR.classList.add("LessContent");
@@ -26,4 +29,7 @@ function less(ReadMore, ReadLess, HiddenInfo, Footer) {
   let footer = document.getElementById(Footer);
   footer.classList.remove("MoreContent");
   footer.classList.add("LessContent");
+  let space = document.getElementById(Space);
+  space.classList.remove("MoreContent");
+  space.classList.add("LessContent"); 
 }

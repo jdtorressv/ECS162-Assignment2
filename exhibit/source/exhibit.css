@@ -168,12 +168,23 @@ hr {
   padding-left: 10%;
   padding-right: 4%;
 }
-
-
-
-
-
-
+#InGreenMobile.LessContent {
+  display: none;
+  float: left;
+  height: 22%;
+  width: 22%;
+  padding-left: 10%;
+  padding-right: 4%;
+}
+#InGreenMobile.MoreContent {
+  display: flex;
+  float: left;
+  height: 30%;
+  width: 85%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+}
 
 #ReadMore.LessContent {
   display: flex;
@@ -407,6 +418,22 @@ hr {
     height: 32%;
     width: 32%;
     padding-left: 0%;
+    padding-right: 4%;
+  }
+  #InGreenMobile.LessContent {
+    display: none;
+    float: left;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
+    padding-right: 4%;
+  }
+  #InGreenMobile.MoreContent {
+    display: none;
+    float: left;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
     padding-right: 4%;
   }
   #ManSide {
@@ -658,6 +685,22 @@ hr {
     padding-right: 0%;
   }
   #InGreenTab {
+    display: none;
+    float: left;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
+    padding-right: 4%;
+  }
+  #InGreenMobile.LessContent {
+    display: none;
+    float: left;
+    height: 22%;
+    width: 22%;
+    padding-left: 10%;
+    padding-right: 4%;
+  }
+  #InGreenMobile.MoreContent {
     display: none;
     float: left;
     height: 22%;

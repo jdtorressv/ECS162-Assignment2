@@ -1,7 +1,9 @@
+/********************************Mobile Assumed********************************/
 body {
     min-height: 100vh;  /* needed to make sure body fills up window */
 }
 header {
+  display: block;
 }
 main {
   font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
@@ -85,7 +87,43 @@ hr {
   flex:  0 1 auto;
   padding-bottom: 5%;
 }
-@media screen and (min-width: 480px) { /*************Tablet*************/
+/***********************************Tablet*************************************/
+@media screen and (min-width: 480px) {
+  body {
+      min-height: 100vh;  /* needed to make sure body fills up window */
+  }
+  header {
+    display: block;
+  }
+  main {
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex:  0 1 auto;
+  }
+  h1 {
+    color: rgb(90, 30, 140);
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal; font-size: 1.6vw;
+  }
+  h2, h3 {
+    color: rgb(255, 255, 255);
+  }
+  h2 {
+    font-family: montserrat, sans-serif; font-weight: 600; font-style: normal;
+  }
+  h3 {
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: italic;
+  }
+  h4, span {
+    color: rgb(201, 82, 61);
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+  }
+  span {
+    font-weight: 500;
+  }
   hr {
     display: none;
   }
@@ -96,6 +134,20 @@ hr {
   }
   #Nav {
     Helvetica: font-family: helvetica; font-size: normal; font-size: 2.8vw;
+  }
+  #Bruce {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex:  0 1 auto;
+  }
+  #CorridorHeadings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:  0 1 auto;
+    padding-left: 13%;
   }
   #Nauman {
     font-size: 6.1vw;
@@ -246,7 +298,43 @@ hr {
     padding-bottom: 2%;
   }
 }
-@media screen and (min-width: 780px) { /************Standard Web***********/
+ /****************************Standard Web*************************************/
+@media screen and (min-width: 780px) {
+  body {
+      min-height: 100vh;  /* needed to make sure body fills up window */
+  }
+  header {
+    display: block;
+  }
+  main {
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex:  0 1 auto;
+  }
+  h1 {
+    color: rgb(90, 30, 140);
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: normal; font-size: 1.6vw;
+  }
+  h2, h3 {
+    color: rgb(255, 255, 255);
+  }
+  h2 {
+    font-family: montserrat, sans-serif; font-weight: 600; font-style: normal;
+  }
+  h3 {
+    font-family: montserrat, sans-serif; font-weight: 200; font-style: italic;
+  }
+  h4, span {
+    color: rgb(201, 82, 61);
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+  }
+  span {
+    font-weight: 500;
+  }
   hr {
     display: block;
   }
@@ -257,6 +345,20 @@ hr {
   }
   #Nav {
     Helvetica: font-family: helvetica; font-size: normal; font-size: 1.5vw;
+  }
+  #Bruce {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex:  0 1 auto;
+  }
+  #CorridorHeadings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:  0 1 auto;
+    padding-left: 13%;
   }
   #Nauman {
     font-size: 5vw;
